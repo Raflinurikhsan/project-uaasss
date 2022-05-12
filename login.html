@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device- width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>coba coba bootstrap</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+     <link href="/style/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="p-3 bg-dark text-white">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logoclean.jpg" alt="mainlogo" width="250" height="50" class="d- inline-block align-text-left">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Layanan Kami |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Kontak</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="/img/chinese.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Cleanasiholic</h1>
+              <p>Kami akan membersihkan ruangan apapun yang anda minta</p>
+              <p><a class="btn btn-lg btn-warning" href="#">Let's Get Started</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="/img/woman-doing-house-work-edited.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Higienis</h1>
+              <p>Ingin rumah anda bersih dan higienis?</p>
+              <p><a class="btn btn-lg btn-success" href="#">Pesan Sekarang!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="/img/man-cleaning-his-home-edited.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Rekomendasi dan Trik</h1>
+              <p>Berbagai tips dan trik dalam membersihkan rumah.</p>
+              <p><a class="btn btn-lg btn-success" href="#">Kunjungi Blog!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><br>
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Our Goals!</h1>
+      <br>
+    </div>
+  
+    <div class="container marketing">
+  
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <svg width="61" height="61" viewBox="0 0 93 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M38.75 89.8334C30.5283 89.8334 22.6433 86.3917 16.8297 80.2655C11.0161 74.1393 7.75 65.8304 7.75 57.1667C7.75 48.5029 11.0161 40.1941 16.8297 34.0679C22.6433 27.9417 30.5283 24.5 38.75 24.5C46.9717 24.5 54.8567 27.9417 60.6703 34.0679C66.4839 40.1941 69.75 48.5029 69.75 57.1667C69.75 65.8304 66.4839 74.1393 60.6703 80.2655C54.8567 86.3917 46.9717 89.8334 38.75 89.8334V89.8334ZM38.75 81.6667C41.8032 81.6667 44.8266 81.033 47.6474 79.8017C50.4682 78.5705 53.0313 76.7658 55.1902 74.4908C57.3492 72.2158 59.0618 69.5149 60.2302 66.5424C61.3986 63.57 62 60.3841 62 57.1667C62 53.9493 61.3986 50.7634 60.2302 47.7909C59.0618 44.8185 57.3492 42.1176 55.1902 39.8426C53.0313 37.5675 50.4682 35.7629 47.6474 34.5316C44.8266 33.3004 41.8032 32.6667 38.75 32.6667C32.5837 32.6667 26.67 35.2479 22.3098 39.8426C17.9495 44.4372 15.5 50.6689 15.5 57.1667C15.5 63.6645 17.9495 69.8962 22.3098 74.4908C26.67 79.0855 32.5837 81.6667 38.75 81.6667V81.6667ZM50.375 61.25C50.375 64.4989 49.1502 67.6148 46.9701 69.9121C44.79 72.2094 41.8331 73.5 38.75 73.5C35.6669 73.5 32.71 72.2094 30.5299 69.9121C28.3498 67.6148 27.125 64.4989 27.125 61.25H50.375ZM31 53.0834C32.0277 53.0834 33.0133 52.6531 33.74 51.8874C34.4667 51.1216 34.875 50.083 34.875 49C34.875 47.9171 34.4667 46.8784 33.74 46.1127C33.0133 45.3469 32.0277 44.9167 31 44.9167C29.9723 44.9167 28.9867 45.3469 28.26 46.1127C27.5333 46.8784 27.125 47.9171 27.125 49C27.125 50.083 27.5333 51.1216 28.26 51.8874C28.9867 52.6531 29.9723 53.0834 31 53.0834ZM46.5 53.0834C47.5277 53.0834 48.5133 52.6531 49.24 51.8874C49.9667 51.1216 50.375 50.083 50.375 49C50.375 47.9171 49.9667 46.8784 49.24 46.1127C48.5133 45.3469 47.5277 44.9167 46.5 44.9167C45.4723 44.9167 44.4867 45.3469 43.76 46.1127C43.0333 46.8784 42.625 47.9171 42.625 49C42.625 50.083 43.0333 51.1216 43.76 51.8874C44.4867 52.6531 45.4723 53.0834 46.5 53.0834V53.0834ZM77.5 16.3334H81.375C82.4027 16.3334 83.3883 16.7636 84.115 17.5293C84.8417 18.2951 85.25 19.3337 85.25 20.4167C85.25 21.4997 84.8417 22.5383 84.115 23.304C83.3883 24.0698 82.4027 24.5 81.375 24.5H77.5V28.5834C77.5 29.6663 77.0917 30.7049 76.365 31.4707C75.6383 32.2365 74.6527 32.6667 73.625 32.6667C72.5973 32.6667 71.6117 32.2365 70.885 31.4707C70.1583 30.7049 69.75 29.6663 69.75 28.5834V24.5H65.875C64.8473 24.5 63.8617 24.0698 63.135 23.304C62.4083 22.5383 62 21.4997 62 20.4167C62 19.3337 62.4083 18.2951 63.135 17.5293C63.8617 16.7636 64.8473 16.3334 65.875 16.3334H69.75V12.25C69.75 11.1671 70.1583 10.1284 70.885 9.36267C71.6117 8.59689 72.5973 8.16669 73.625 8.16669C74.6527 8.16669 75.6383 8.59689 76.365 9.36267C77.0917 10.1284 77.5 11.1671 77.5 12.25V16.3334Z" fill="#FFE600"/>
+            </svg>
+  
+          <h2>Pelayanan</h2>
+          <p>Kami akan memberikan pelayanan terbaik kami!</p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_5_117)">
+            <path d="M32.4634 3.88494C31.8101 3.8367 31.1551 3.81254 30.5 3.8125V0C31.2493 0.000365343 31.9983 0.0283427 32.7456 0.083875L32.4634 3.88494ZM40.1037 5.60056C38.8816 5.12897 37.6264 4.74796 36.3484 4.46062L37.1833 0.739625C38.6435 1.0675 40.0808 1.50213 41.4762 2.0435L40.1037 5.60056ZM45.3268 8.30744C44.7817 7.94391 44.2235 7.60056 43.6531 7.27806L45.5327 3.96119C46.8362 4.6998 48.0837 5.53317 49.2651 6.45456L46.9204 9.46263C46.4036 9.05938 45.872 8.67533 45.3268 8.31125V8.30744ZM52.3189 15.1318C51.5648 14.0604 50.7327 13.0461 49.8294 12.0971L52.5896 9.46644C53.619 10.553 54.5721 11.7158 55.4376 12.9358L52.3189 15.1318ZM55.1554 20.2863C54.9052 19.6819 54.6331 19.0867 54.3396 18.5021L57.7441 16.7864C58.4174 18.1249 58.9909 19.5114 59.4598 20.9344L55.8379 22.1278C55.633 21.5058 55.4054 20.8916 55.1554 20.2863ZM57.1761 29.8442C57.1452 28.534 57.0178 27.2279 56.7948 25.9364L60.5501 25.2883C60.8056 26.7599 60.9543 28.2544 60.9924 29.7489L57.1799 29.8442H57.1761ZM56.6766 35.7079C56.8024 35.0597 56.9054 34.4154 56.9854 33.7635L60.7713 34.2324C60.5881 35.7199 60.295 37.1917 59.8944 38.6359L56.2191 37.6179C56.3945 36.9889 56.547 36.3522 56.6766 35.7079ZM53.0471 44.7778C53.7486 43.6722 54.3663 42.5132 54.9 41.3161L58.3846 42.8601C57.7746 44.2326 57.0693 45.5518 56.2687 46.8175L53.0471 44.7778ZM49.3719 49.3719C49.837 48.9067 50.2831 48.4264 50.7063 47.9307L53.5961 50.4203C53.1067 50.9877 52.5968 51.5371 52.0673 52.0673L49.3719 49.3719Z" fill="#FF7777"/>
+            <path d="M30.4999 3.8125C26.1113 3.81282 21.7905 4.89543 17.9201 6.96444C14.0498 9.03345 10.7495 12.025 8.31141 15.6741C5.87336 19.3233 4.37286 23.5173 3.94281 27.8849C3.51276 32.2524 4.16644 36.6586 5.84595 40.7131C7.52545 44.7677 10.1789 48.3455 13.5714 51.1296C16.9639 53.9138 20.9906 55.8183 25.2949 56.6746C29.5992 57.5309 34.0482 57.3124 38.2479 56.0386C42.4477 54.7648 46.2684 52.475 49.3718 49.3719L52.0673 52.0673C48.5206 55.6159 44.1535 58.2349 39.3527 59.6923C34.552 61.1497 29.4659 61.4004 24.5451 60.4223C19.6242 59.4442 15.0207 57.2675 11.1422 54.085C7.26368 50.9025 4.23005 46.8124 2.31007 42.1773C0.390093 37.5421 -0.356956 32.5049 0.135115 27.512C0.627186 22.5191 2.34318 17.7247 5.13107 13.5535C7.91895 9.38232 11.6926 5.96317 16.1178 3.59901C20.5429 1.23485 25.4829 -0.00132954 30.4999 1.07306e-06V3.8125Z" fill="#FF7777"/>
+            <path d="M28.5938 11.4375C29.0993 11.4375 29.5842 11.6383 29.9417 11.9958C30.2992 12.3533 30.5 12.8382 30.5 13.3437V33.2069L42.883 40.2829C43.3092 40.54 43.6179 40.9536 43.7432 41.4353C43.8685 41.9171 43.8004 42.4287 43.5534 42.8609C43.3065 43.2931 42.9003 43.6115 42.4216 43.7481C41.943 43.8848 41.4299 43.8288 40.992 43.5921L27.6482 35.9671C27.3565 35.8005 27.114 35.5597 26.9452 35.2691C26.7765 34.9785 26.6876 34.6485 26.6875 34.3125V13.3437C26.6875 12.8382 26.8883 12.3533 27.2458 11.9958C27.6033 11.6383 28.0882 11.4375 28.5938 11.4375Z" fill="#FF7777"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_5_117">
+            <rect width="61" height="61" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+  
+          <h2>Cepat!</h2>
+          <p>Kami usahakan akan tepat waktu!</p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg width="61" height="63" viewBox="0 0 93 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_5_124)">
+            <path d="M63.7954 0L39.8953 24.9244C38.1779 23.8951 35.949 24.1437 34.4813 25.6742C33.2537 26.9543 32.8868 28.7904 33.377 30.4047C30.0047 28.6071 26.1267 28.3042 22.2234 30.0402C14.9017 33.8292 9.85005 41.7126 0 42.6286C0.751858 44.2429 1.72544 46.0429 2.91952 48.0261C7.06148 48.7062 11.1402 47.3326 14.3271 43.9417C13.0892 47.9595 10.0645 50.9581 5.9738 52.5205C7.03517 53.9963 8.24921 55.5456 9.62016 57.1599C14.3365 55.5157 16.0229 53.2655 11.6102 59.3678C13.4713 61.3837 15.4646 63.5214 17.9139 65.3203C19.0021 61.1302 21.9347 57.9127 26.1362 56.2569C22.9169 59.4036 21.6277 63.9614 22.4223 68.8454C24.8547 70.5518 27.0888 71.9394 29.1232 73.0001C30.856 65.2479 35.9126 57.2069 41.1944 49.8243C42.8986 46.0832 42.6225 42.0406 40.8091 38.1804C42.3658 38.7095 44.1439 38.3313 45.381 37.0412C46.8486 35.5107 47.0869 33.1862 46.0999 31.3952L70 6.47084L63.7956 0.000486667L63.7954 0Z" fill="#46FFBC"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_5_124">
+              <rect width="70" height="73" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+          <h2>Kualitas Terbaik!</h2>
+          <p>Akan membersihkan sebersih mungkin!</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+  
+  
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Tertarik Membaca Blog Kami?. <span class="text-muted">Kunjungi Sekarang!.</span></h2><br>
+          <p class="lead">Temui berbagai tips dan trik dalam membersihkan rumah anda, rekomendasi produk kebersihan, dan lain sebagainya di Blog kami.</p><br>
+          <p><a class="btn btn-lg btn-success" href="#">Kunjungi Blog!</a></p>
+        
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/img/happy-male-carrying-carpet-new-home.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  </main>
+  
+  <div class="b-example-divider"></div>
+
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022 Cleanasiholic. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
