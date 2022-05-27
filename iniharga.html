@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Ini Harga Ya</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device- width, initial-scale=1">
+
+<link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='' rel='stylesheet'>
+                                <style>body {
+    background: #f5f6f9;
+    padding: 30px 0
+}
+
+a {
+    text-decoration: none;
+}
+
+.pricingTable {
+    text-align: center;
+    background: #fff;
+    margin: 0 -15px;
+    box-shadow: 0 0 10px #ababab;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    color: #cad0de;
+    transform: scale(1);
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover {
+    transform: scale(1.05);
+    z-index: 1
+}
+
+.pricingTable .pricingTable-header {
+    padding: 40px 0;
+    background: #f5f6f9;
+    border-radius: 10px 10px 50% 50%;
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover .pricingTable-header {
+    background: #ff9624
+}
+
+.pricingTable .pricingTable-header i {
+    font-size: 50px;
+    color: #858c9a;
+    margin-bottom: 10px;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .price-value {
+    font-size: 35px;
+    color: #ff9624;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .month {
+    display: block;
+    font-size: 14px;
+    color: #cad0de
+}
+
+.pricingTable:hover .month,
+.pricingTable:hover .price-value,
+.pricingTable:hover .pricingTable-header i {
+    color: #fff
+}
+
+.pricingTable .heading {
+    font-size: 24px;
+    color: #ff9624;
+    margin-bottom: 20px;
+    text-transform: uppercase
+}
+
+.pricingTable .pricing-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+.pricingTable .pricing-content ul li {
+    line-height: 30px;
+    color: #a7a8aa
+}
+
+.pricingTable .pricingTable-signup a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 20px;
+    background: #ffa442;
+    text-transform: uppercase;
+    transition: all .3s ease 0s
+}
+
+.pricingTable .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ffa442
+}
+
+.pricingTable.blue .heading,
+.pricingTable.blue .price-value {
+    color: #4b64ff
+}
+
+.pricingTable.blue .pricingTable-signup a,
+.pricingTable.blue:hover .pricingTable-header {
+    background: #4b64ff
+}
+
+.pricingTable.blue .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #4b64ff
+}
+
+.pricingTable.red .heading,
+.pricingTable.red .price-value {
+    color: #ff4b4b
+}
+
+.pricingTable.red .pricingTable-signup a,
+.pricingTable.red:hover .pricingTable-header {
+    background: #ff4b4b
+}
+
+.pricingTable.red .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ff4b4b
+}
+
+.pricingTable.green .heading,
+.pricingTable.green .price-value {
+    color: #00c851
+}
+
+.pricingTable.green .pricingTable-signup a,
+.pricingTable.green:hover .pricingTable-header {
+    background: #00c851
+}
+
+.pricingTable.green .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #00c851
+}
+
+.pricingTable.blue:hover .price-value,
+.pricingTable.green:hover .price-value,
+.pricingTable.red:hover .price-value {
+    color: #fff
+}
+
+@media screen and (max-width:990px) {
+    .pricingTable {
+        margin: 0 0 20px
+    }
+}</style>
+                                <script type='text/javascript' src=''></script>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+                                <script type='text/javascript'></script> 
+                                <link href="/style/setail.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="p-3 bg-success text-white">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="/img/cleanaholicPEA-removebg-preview.png" alt="mainlogo" width="250" height="60" class="d- inline-block align-text-left">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/login.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Layanan Kami</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Kontak</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form class="float-md-end">
+            <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
+          </form>
+          <button class="btn btn-success btn-lg"></button>
+        </nav>
+      </header>
+      <hr class="featurette-divider">
+
+
+  <main>               
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="/img/logocleana-removebg-preview.png" alt="" width="300" height="100">
+        <h1><font style="font-family:'Calibry', Arial, sans-serif;" color="#00c851">Paket Layanan Kami!</font></h1>
+      </div><br>       
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-adjust"></i>
+                        <div class="price-value"> Rp.1000.000 <span class="month">/gudang barang</span> </div>
+                    </div>
+                    <h3 class="heading">Clean Gudang</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Bersih</b> gudang</li>
+                            <li><b>Angkut</b> Barang</li>
+                            <li><b>Basmi</b> Hama</li>
+                            <li><b>Cek</b> Ventilasi</li>
+                            <li><b>Cek</b> Instalasi Listrik</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable green">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-briefcase"></i>
+                        <div class="price-value"> Rp.150.000 <span class="month">/unit</span> </div>
+                    </div>
+                    <h3 class="heading">Clean AC</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Filter</b> AC</li>
+                            <li><b>Cek</b> Tekanan Freon</li>
+                            <li><b>Service</b> AC</li>
+                            <li><b>Cuci</b> AC</li>
+                            <li><b>Pencegahan</b> Kebocoran</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable blue">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-diamond"></i>
+                        <div class="price-value"> Rp.25.000 <span class="month">/M2</span> </div>
+                    </div>
+                    <h3 class="heading">Clean Carpet</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Vacuum</b> Karpet</li>
+                            <li><b>Cuci</b> Karpet</li>
+                            <li><b>Baking</b> Soda</li>
+                            <li><b>Sikat</b> Karpet</li>
+                            <li><b>Jemur</b> Karpet</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable red">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-cube"></i>
+                        <div class="price-value"> Rp.600.000 <span class="month">8x kunjungan dalam sebulan</span> </div>
+                    </div>
+                    <h3 class="heading">Cleanfreak</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Seluruh</b> Ruangan</li>
+                            <li><b>Halaman</b> Rumah</li>
+                            <li><b>Teras</b> Rumah</li>
+                            <li><b>Rawat</b> Tanaman</li>
+                            <li><b>Bersih</b> Perabotan</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="#">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <hr class="featurette-divider">
+</main>
+ 
+  
+
+   <footer class=" text-light pt-1 pb-1 fixed-bottom" style="background-color: #004D25">
+    <p class="text-center">©2022 Cleanaholic | About | Privacy Policy</p>
+   </footer>  
+</body>
+</html>
