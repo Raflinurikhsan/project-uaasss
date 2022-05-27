@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -103,4 +104,24 @@ body {
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
+=======
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.nav-item .btn-custom{
+    background-color: black
+>>>>>>> d5c086b923cd36062715f9504125b4baaa2cbce9
 }
