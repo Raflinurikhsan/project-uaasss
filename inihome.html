@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Carousel Template · Bootstrap v5.1</title>
+    <title>Home</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
 
@@ -26,6 +26,148 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>coba coba bootstrap</title>
     <style>
+      body {
+    background: #f5f6f9;
+    padding: 30px 0
+}
+
+a {
+    text-decoration: none;
+}
+
+.pricingTable {
+    text-align: center;
+    background: #fff;
+    margin: 0 -15px;
+    box-shadow: 0 0 10px #ababab;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    color: #cad0de;
+    transform: scale(1);
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover {
+    transform: scale(1.05);
+    z-index: 1
+}
+
+.pricingTable .pricingTable-header {
+    padding: 40px 0;
+    background: #f5f6f9;
+    border-radius: 10px 10px 50% 50%;
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover .pricingTable-header {
+    background: #ff9624
+}
+
+.pricingTable .pricingTable-header i {
+    font-size: 50px;
+    color: #858c9a;
+    margin-bottom: 10px;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .price-value {
+    font-size: 35px;
+    color: #ff9624;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .month {
+    display: block;
+    font-size: 14px;
+    color: #cad0de
+}
+
+.pricingTable:hover .month,
+.pricingTable:hover .price-value,
+.pricingTable:hover .pricingTable-header i {
+    color: #fff
+}
+
+.pricingTable .heading {
+    font-size: 24px;
+    color: #ff9624;
+    margin-bottom: 20px;
+    text-transform: uppercase
+}
+
+.pricingTable .pricing-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+.pricingTable .pricing-content ul li {
+    line-height: 30px;
+    color: #a7a8aa
+}
+
+.pricingTable .pricingTable-signup a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 20px;
+    background: #ffa442;
+    text-transform: uppercase;
+    transition: all .3s ease 0s
+}
+
+.pricingTable .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ffa442
+}
+
+.pricingTable.blue .heading,
+.pricingTable.blue .price-value {
+    color: #4b64ff
+}
+
+.pricingTable.blue .pricingTable-signup a,
+.pricingTable.blue:hover .pricingTable-header {
+    background: #4b64ff
+}
+
+.pricingTable.blue .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #4b64ff
+}
+
+.pricingTable.red .heading,
+.pricingTable.red .price-value {
+    color: #ff4b4b
+}
+
+.pricingTable.red .pricingTable-signup a,
+.pricingTable.red:hover .pricingTable-header {
+    background: #ff4b4b
+}
+
+.pricingTable.red .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ff4b4b
+}
+
+.pricingTable.green .heading,
+.pricingTable.green .price-value {
+    color: #00c851
+}
+
+.pricingTable.green .pricingTable-signup a,
+.pricingTable.green:hover .pricingTable-header {
+    background: #00c851
+}
+
+.pricingTable.green .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #00c851
+}
+
+.pricingTable.blue:hover .price-value,
+.pricingTable.green:hover .price-value,
+.pricingTable.red:hover .price-value {
+    color: #fff
+}
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -38,6 +180,9 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+        .pricingTable {
+        margin: 0 0 20px
+        }
       }
     </style>
      <link href="/style/style.css" rel="stylesheet">
@@ -47,11 +192,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-<<<<<<< HEAD
-          <img src="/img/logo-removebg-preview.png" alt="mainlogo" width="250" height="50" class="d- inline-block align-text-left">
-=======
-          <img src="/img/logoclean.jpg" alt="mainlogo" width="250" height="50" class="d- inline-block align-text-left">
->>>>>>> d5c086b923cd36062715f9504125b4baaa2cbce9
+          <img src="/img/cleanaholicPEA-removebg-preview.png" alt="mainlogo" width="250" height="60" class="d- inline-block align-text-left">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -59,23 +200,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-<<<<<<< HEAD
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/inihome.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">Layanan Kami</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">About</a>
-=======
-              <a class="nav-link active" aria-current="page" href="#">Home |</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Layanan Kami |</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">About |</a>
->>>>>>> d5c086b923cd36062715f9504125b4baaa2cbce9
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">Kontak</a>
@@ -83,7 +214,10 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
-          </form>
+          </form><br>
+          <div class="d-lg-flex">
+            <button type="button" class="btn btn-primary">Sign-in</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -101,9 +235,9 @@
   
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Blog Cleanasiholic</h1>
+              <h1>Blog Cleanaholic</h1>
               <p>Temui tips-tips yang bermanfaat</p>
-              <p><a class="btn btn-lg btn-success" href="#">Kunjungi Blog!</a></p>
+              <p><a class="btn btn-lg btn-success" href="http://127.0.0.1:5500/blog.html">Kunjungi Blog!</a></p>
             </div>
           </div>
         </div>
@@ -114,7 +248,7 @@
             <div class="carousel-caption">
               <h1>Higienis</h1>
               <p>Ingin rumah anda bersih dan higienis?</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Pesan Sekarang!</a></p>
+              <p><a class="btn btn-lg btn-primary" href="http://127.0.0.1:5500/loginclean.html">Daftar Sekarang!</a></p>
             </div>
           </div>
         </div>
@@ -123,7 +257,7 @@
   
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>Cleanasiholic</h1>
+              <h1>Cleanaholic</h1>
               <p>Kami akan membersihkan ruangan apapun yang anda minta</p>
               <p><a class="btn btn-lg btn-warning" href="#">Let's Get Started!</a></p>
             </div>
@@ -193,16 +327,107 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
   
-  
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="/img/logocleana-removebg-preview.png" alt="" width="300" height="100">
+        <h1><font style="font-family:'Calibry', Arial, sans-serif;" color="#00c851">Paket Layanan Kami!</font></h1>
+      </div><br>       
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-adjust"></i>
+                        <div class="price-value"> Rp.1000.000 <span class="month">/gudang barang</span> </div>
+                    </div>
+                    <h3 class="heading">Clean Gudang</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Bersih</b> gudang</li>
+                            <li><b>Angkut</b> Barang</li>
+                            <li><b>Basmi</b> Hama</li>
+                            <li><b>Cek</b> Ventilasi</li>
+                            <li><b>Cek</b> Instalasi Listrik</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="http://127.0.0.1:5500/inicheckout.html" target="blank">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable green">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-briefcase"></i>
+                        <div class="price-value"> Rp.150.000 <span class="month">/unit</span> </div>
+                    </div>
+                    <h3 class="heading">Clean AC</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Filter</b> AC</li>
+                            <li><b>Cek</b> Tekanan Freon</li>
+                            <li><b>Service</b> AC</li>
+                            <li><b>Cuci</b> AC</li>
+                            <li><b>Pencegahan</b> Kebocoran</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="http://127.0.0.1:5500/inicheckout.html" target="blank">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable blue">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-diamond"></i>
+                        <div class="price-value"> Rp.25.000 <span class="month">/M2</span> </div>
+                    </div>
+                    <h3 class="heading">Clean Carpet</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Vacuum</b> Karpet</li>
+                            <li><b>Cuci</b> Karpet</li>
+                            <li><b>Baking</b> Soda</li>
+                            <li><b>Sikat</b> Karpet</li>
+                            <li><b>Jemur</b> Karpet</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="http://127.0.0.1:5500/inicheckout.html" target="blank">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="pricingTable red">
+                    <div class="pricingTable-header">
+                        <i class="fa fa-cube"></i>
+                        <div class="price-value"> Rp.600.000 <span class="month">8x kunjungan dalam sebulan</span> </div>
+                    </div>
+                    <h3 class="heading">Cleanfreak</h3>
+                    <div class="pricing-content">
+                        <ul>
+                            <li><b>Seluruh</b> Ruangan</li>
+                            <li><b>Halaman</b> Rumah</li>
+                            <li><b>Teras</b> Rumah</li>
+                            <li><b>Rawat</b> Tanaman</li>
+                            <li><b>Bersih</b> Perabotan</li>
+                        </ul>
+                    </div>
+                    <div class="pricingTable-signup">
+                        <a href="http://127.0.0.1:5500/inicheckout.html" target="blank">Pesan!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <hr class="featurette-divider">
       <!-- START THE FEATURETTES -->
-  
-      <hr class="featurette-divider">
   
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">Tertarik Membaca Blog Kami?. <span class="text-muted">Kunjungi Sekarang!.</span></h2><br>
           <p class="lead">Temui berbagai tips dan trik dalam membersihkan rumah anda, rekomendasi produk kebersihan, dan lain sebagainya di Blog kami.</p><br>
-          <p><a class="btn btn-lg btn-success" href="#">Kunjungi Blog!</a></p>
+          <p><a class="btn btn-lg btn-success" href="http://127.0.0.1:5500/blog.html" target="_blank">Kunjungi Blog!</a></p>
         
         </div>
         <div class="col-md-5 order-md-1">
@@ -212,11 +437,40 @@
       </div>
   
       <hr class="featurette-divider">
-  </main>
-  
-  <footer class=" text-light pt-1 pb-1 fixed-bottom" style="background-color: #004D25">
-    <p class="text-center">©2022 Cleanasiholic | About | Privacy Policy</p>
-</footer>  
+  </main> 
+
+  <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+    <div class="row my-5 justify-content-center">
+        <div class="col text-center">
+            <div class="card border-0">
+                <div class="card-body">
+                    <div class="card-title"><h3 class="mb-4">Ready to See What our team  can do?</h3></div> 
+                    <div class="row justify-content-center"><div class="col-md-4 col"><p class="small color-text">Kami akan menunjukkan kepada anda kualitas terbaik kami!</p> <button type="button" class="btn btn-primary border-0 my-4"><b>Mulai Sekarang!</b></button><br> <img src="/img/52068-removebg-preview.png" class="img-fluid" width="450"></div></div>
+                </div>                       
+            </div>
+        </div>
+    </div>
+    <footer >
+       <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
+           <div class="col-12">
+                <div class="row row-2">
+                    <div class="col-sm-3 text-md-center"><h5><span> <i class="fa fa-firefox text-light" aria-hidden="true"></i></span><b>  Cleanaholic</b></h5></div>
+                    <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0">Platform</li><li>Help Center</li><li>Security</li></ul></div>
+                    <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0">Customers</li><li>Use Cases</li><li>Customers Services</li></ul></div>
+                    <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0">Company</li><li>About</li><li>Careers- <span class="Careers">We're-hiring</span></li></ul></div>
+                </div>  
+           </div>
+       </div>
+       <div class="row justify-content-center mt-0 pt-0 row-1 mb-0  px-sm-3 px-2">
+            <div class="col-12">
+                <div class="row my-4 row-1 no-gutters">
+                    <div class="col-sm-3 col-auto text-center"><small>&#9400; Cleanaholic</small></div><div class="col-md-3 col-auto "></div><div class="col-md-3 col-auto"></div>
+                    <div class="col  my-auto text-md-left  text-right "> <small> Cleanaholic <span><img src="/img/52068-removebg-preview.png" class="img-fluid "  width="25"></span></small>  </div> 
+                </div>
+            </div>
+        </div>
+     </footer>
+   </div>
 
 
   <script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
