@@ -1,0 +1,8 @@
+.image p{
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0px 2px 20px -4px rgba(207, 205, 205, 0.756); 
+    border-radius: 10px;
+}
